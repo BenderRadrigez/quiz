@@ -1,0 +1,59 @@
+$light-bg: #ffffff;
+@mixin basicWidth {
+  min-width: 280px;
+  width: 40vw;
+}
+
+body {
+  background-image: url("../../images/bg.jpg");
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  .logo {
+    background: $light-bg;
+    text-align: center;
+    padding: 7px;
+    font-size: 70px;
+    transform: skewX(-20deg);
+    mix-blend-mode: lighten;
+    border-radius: 10px 0;
+    border: 7px solid;
+    box-shadow: 0 0 7px 20px rgb(255, 255, 255);
+    margin-bottom: 1vh;
+    @include basicWidth;
+    span {
+      display: inline-block;
+      transform: skewX(20deg);
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 335px;
+    .brain-img {
+      @include basicWidth;
+    }
+
+    .start-btn {
+      @include basicWidth;
+      transform: skewX(-20deg);
+      cursor: pointer;
+      font-size: 20px;
+      mix-blend-mode: lighten;
+      padding: 10px;
+      border-radius: 10px 0;
+      border: 1px solid;
+      box-shadow: 0 0 1px 5px rgb(255, 255, 255);
+      span {
+        display: inline-block;
+        transform: skewX(20deg);
+      }
+    }
+  }
+}

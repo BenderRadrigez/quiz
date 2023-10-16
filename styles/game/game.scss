@@ -1,0 +1,38 @@
+.question {
+  font-size: 30%;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  gap: 30px;
+
+  li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    img {
+      width: 35px;
+      background: #fff;
+      border-radius: 50%;
+    }
+
+    .answer {
+      @include basicWidth;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap: 20px;
+      transform: skewX(-20deg);
+      padding: 10px;
+      border-radius: 10px 0;
+      border: 1px solid;
+      box-shadow: 0 0 1px 5px rgb(255, 255, 255);
+      cursor: pointer;
+    }
+  }
+}

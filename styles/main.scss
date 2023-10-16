@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "ComicRelief";
+    src: url(../fonts/Comic-Relief-Bold.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "ComicRelief";
+}
+
+@import "./menu/menu.scss";
+@import "./game/game.scss";
