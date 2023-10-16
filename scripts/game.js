@@ -16,7 +16,7 @@ answerBtns.forEach((el) => {
     setTimeout(()=>{
         currentQuestionIndex++;
         generateQuiz();
-    }, 3000)
+    }, 1000)
   });
 });
 
